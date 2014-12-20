@@ -11,26 +11,36 @@ class PlusapiController < ActionController::API
 
   def addPlus
     plus = Plus.find(params[:id])
-    #res = plus.addPlus
-    #plus.save
+    res = plus.addPlus
+    plus.save
 
-    #message = plus.first_name + " a gagné un plus !"
-    #params = {
-    #    'token' => 'xoxp-3217377900-3217377902-3223374508-251648',
-    #    'channel' => '#apliplus',
-    #    'text' => message,
-    #    'username' => 'APLIBot',
-    #}
-    #url = 'https://slack.com/api/chat.postMessage?' + URI.encode_www_form(params)
-    #url = URI.parse(url)
+    if (res % 10) == 0
+      Thread.new do
+        message = plus.first_name + ' a maintenant ' + res.to_s + ' plus ! Brace yourselves.'
+        params = {
+            'token' => 'xoxp-3217377900-3217377902-3223374508-251648',
+            'channel' => '#apliplus',
+            'text' => message,
+            'username' => 'APLIBot',
+        }
+        url = 'https://slack.com/api/chat.postMessage?' + URI.encode_www_form(params)
+        url = URI.parse(url)
 
-    #req = Net::HTTP::Get.new(url.to_s)
-    #proxy_host = "193.49.200.22"
-    #proxy_port = "3128"
-    #http = Net::HTTP.new(url.host, url.port, proxy_host, proxy_port)
-    #http.use_ssl = (url.scheme == "https")
-    #response = http.request(req)
-    #render json: {plus_number: res}
+        req = Net::HTTP::Get.new(url.to_s)
+        http = Net::HTTP.new(url.host, url.port)
+        http.use_ssl = (url.scheme == "https")
+        response = http.request(req)
+      end
+    end
+
+    render json: {plus_number: res}
+  end
+
+  def subPlus
+    plus = Plus.find(params[:id])
+    res = plus.subPlus
+    plus.save
+    render json: {plus_number: res}
   end
 
   def getLaid
