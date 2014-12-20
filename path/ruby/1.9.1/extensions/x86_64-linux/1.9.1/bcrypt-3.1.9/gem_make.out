@@ -1,0 +1,16 @@
+/usr/bin/ruby1.9.1 -r ./siteconf20141205-22956-bpw8j3.rb extconf.rb 
+creating Makefile
+
+make  clean
+
+make
+compiling wrapper.c
+compiling crypt_blowfish.c
+compiling bcrypt_ext.c
+compiling crypt_gensalt.c
+compiling crypt.c
+linking shared-object bcrypt_ext.so
+
+make  install
+/usr/bin/install -c -m 0755 bcrypt_ext.so .gem.20141205-22956-ftoyto
+installing default bcrypt_ext libraries

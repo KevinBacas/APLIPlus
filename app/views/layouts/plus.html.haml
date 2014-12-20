@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %title
+      APLIPlus, the brand new teambuilding concept #Complete #NoLimits !
+    = stylesheet_link_tag 'plus', media: 'all'
+  %body
+    %nav.top-bar{ "role" => "navigation", "data-topbar" => "true" }
+      %ul.title-area
+        %li.name
+          %h1
+            %a{ :href => "/" }
+              APLIPlus
+    = yield
+    %footer.row
+      %div.large-12.colums
+        %div.text-center
+    - if Rails.env.development?
+      %div.panel
+        = debug(params)
+    = javascript_include_tag 'plus'

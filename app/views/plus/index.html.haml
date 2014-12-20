@@ -1,0 +1,23 @@
+%div.row{ "ng-app" => "APLIPlusApp" }
+  %div.large-12.columns
+    %h1
+      APLIListing :
+    %hr
+    %div.large-12.columns{ "ng-controller" => "APLIPlusController" }
+      %div.row
+        %div.large-3.columns
+          Nom
+        %div.large-3.columns
+          Nombre de plus
+        %div.large-3.columns
+          Actions
+      %div{ "ng-repeat" => "people in peoples" }
+        %div.row
+          %div.large-3.columns
+            {{ people.first_name }} {{ people.last_name }}
+          %div.large-3.columns
+            {{ people.plus_number }}
+          %div.large-3.columns
+            %i.fi-plus.action_add{ "ng-click" => "actionAdd(people.id)" }
+            %i.fi-minus.action_sub{ "ng-click" => "actionSub(people.id)" }
+            %i.fi-torsos-male-female.action_get_laid{ "ng-click" => "actionGetLaid(people.id)" }

@@ -1,0 +1,28 @@
+//= require foundation
+
+@import "parts/_colors";
+@import "parts/_fonts";
+@import "parts/_variables";
+@import "parts/_settings";
+
+@import 'foundation-icons';
+
+$icon_spacing : 1rem / 2;
+
+.action_add {
+  margin-left : $icon_spacing;
+  margin-right : $icon_spacing;
+  color : green;
+}
+
+.action_sub {
+  margin-left : $icon_spacing;
+  margin-right : $icon_spacing;
+  color : red;
+}
+
+.action_get_laid {
+  margin-left : $icon_spacing;
+  margin-right : $icon_spacing;
+  color : #ffff00;
+}

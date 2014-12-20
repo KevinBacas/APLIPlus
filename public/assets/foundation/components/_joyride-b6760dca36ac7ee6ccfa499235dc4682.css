@@ -1,0 +1,351 @@
+/* line 347, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_global.scss */
+meta.foundation-version {
+  font-family: "/5.4.5/";
+}
+
+/* line 351, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_global.scss */
+meta.foundation-mq-small {
+  font-family: "/only screen/";
+  width: 0em;
+}
+
+/* line 356, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_global.scss */
+meta.foundation-mq-medium {
+  font-family: "/only screen and (min-width:40.063em)/";
+  width: 40.063em;
+}
+
+/* line 361, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_global.scss */
+meta.foundation-mq-large {
+  font-family: "/only screen and (min-width:64.063em)/";
+  width: 64.063em;
+}
+
+/* line 366, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_global.scss */
+meta.foundation-mq-xlarge {
+  font-family: "/only screen and (min-width:90.063em)/";
+  width: 90.063em;
+}
+
+/* line 371, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_global.scss */
+meta.foundation-mq-xxlarge {
+  font-family: "/only screen and (min-width:120.063em)/";
+  width: 120.063em;
+}
+
+/* line 376, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_global.scss */
+meta.foundation-data-attribute-namespace {
+  font-family: false;
+}
+
+/* line 383, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_global.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 388, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_global.scss */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 393, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_global.scss */
+html,
+body {
+  font-size: 100%;
+}
+
+/* line 396, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_global.scss */
+body {
+  background: white;
+  color: #222222;
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.5;
+  position: relative;
+  cursor: auto;
+}
+
+/* line 409, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_global.scss */
+a:hover {
+  cursor: pointer;
+}
+
+/* line 412, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_global.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 414, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_global.scss */
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 420, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_global.scss */
+#map_canvas img,
+#map_canvas embed,
+#map_canvas object,
+.map_canvas img,
+.map_canvas embed,
+.map_canvas object {
+  max-width: none !important;
+}
+
+/* line 425, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_global.scss */
+.left {
+  float: left !important;
+}
+
+/* line 426, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_global.scss */
+.right {
+  float: right !important;
+}
+
+/* line 172, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_global.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+/* line 173, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_global.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 428, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_global.scss */
+.hide {
+  display: none;
+}
+
+/* line 434, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_global.scss */
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 437, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_global.scss */
+img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 447, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_global.scss */
+textarea {
+  height: auto;
+  min-height: 50px;
+}
+
+/* line 450, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_global.scss */
+select {
+  width: 100%;
+}
+
+/* Foundation Joyride */
+/* line 48, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_joyride.scss */
+.joyride-list {
+  display: none;
+}
+
+/* Default styles for the container */
+/* line 51, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_joyride.scss */
+.joyride-tip-guide {
+  display: none;
+  position: absolute;
+  background: #333333;
+  color: white;
+  z-index: 101;
+  top: 0;
+  left: 2.5%;
+  font-family: inherit;
+  font-weight: normal;
+  width: 95%;
+}
+
+/* line 64, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_joyride.scss */
+.lt-ie9 .joyride-tip-guide {
+  max-width: 800px;
+  left: 50%;
+  margin-left: -400px;
+}
+
+/* line 70, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_joyride.scss */
+.joyride-content-wrapper {
+  width: 100%;
+  padding: 1.125rem 1.25rem 1.5rem;
+}
+/* line 75, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_joyride.scss */
+.joyride-content-wrapper .button {
+  margin-bottom: 0 !important;
+}
+/* line 77, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_joyride.scss */
+.joyride-content-wrapper .joyride-prev-tip {
+  margin-right: 10px;
+}
+
+/* Add a little css triangle pip, older browser just miss out on the fanciness of it */
+/* line 82, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_joyride.scss */
+.joyride-tip-guide .joyride-nub {
+  display: block;
+  position: absolute;
+  left: 22px;
+  width: 0;
+  height: 0;
+  border: 10px solid #333333;
+}
+/* line 90, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_joyride.scss */
+.joyride-tip-guide .joyride-nub.top {
+  border-top-style: solid;
+  border-color: #333333;
+  border-top-color: transparent !important;
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+  top: -20px;
+}
+/* line 98, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_joyride.scss */
+.joyride-tip-guide .joyride-nub.bottom {
+  border-bottom-style: solid;
+  border-color: #333333 !important;
+  border-bottom-color: transparent !important;
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+  bottom: -20px;
+}
+/* line 107, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_joyride.scss */
+.joyride-tip-guide .joyride-nub.right {
+  right: -20px;
+}
+/* line 108, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_joyride.scss */
+.joyride-tip-guide .joyride-nub.left {
+  left: -20px;
+}
+
+/* Typography */
+/* line 118, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_joyride.scss */
+.joyride-tip-guide h1,
+.joyride-tip-guide h2,
+.joyride-tip-guide h3,
+.joyride-tip-guide h4,
+.joyride-tip-guide h5,
+.joyride-tip-guide h6 {
+  line-height: 1.25;
+  margin: 0;
+  font-weight: bold;
+  color: white;
+}
+
+/* line 124, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_joyride.scss */
+.joyride-tip-guide p {
+  margin: 0 0 1.125rem 0;
+  font-size: 0.875rem;
+  line-height: 1.3;
+}
+
+/* line 130, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_joyride.scss */
+.joyride-timer-indicator-wrap {
+  width: 50px;
+  height: 3px;
+  border: solid 1px #555555;
+  position: absolute;
+  right: 1.0625rem;
+  bottom: 1rem;
+}
+
+/* line 138, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_joyride.scss */
+.joyride-timer-indicator {
+  display: block;
+  width: 0;
+  height: inherit;
+  background: #666666;
+}
+
+/* line 145, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_joyride.scss */
+.joyride-close-tip {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  color: #777777 !important;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: .5 !important;
+}
+/* line 156, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_joyride.scss */
+.joyride-close-tip:hover, .joyride-close-tip:focus {
+  color: #eeeeee !important;
+}
+
+/* line 159, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_joyride.scss */
+.joyride-modal-bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  display: none;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+/* line 172, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_joyride.scss */
+.joyride-expose-wrapper {
+  background-color: white;
+  position: absolute;
+  border-radius: 3px;
+  z-index: 102;
+  box-shadow: 0 0 15px white;
+}
+
+/* line 180, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_joyride.scss */
+.joyride-expose-cover {
+  background: transparent;
+  border-radius: 3px;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+}
+
+/* Styles for screens that are at least 768px; */
+@media only screen and (min-width: 40.063em) {
+  /* line 192, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_joyride.scss */
+  .joyride-tip-guide {
+    width: 300px;
+    left: inherit;
+  }
+  /* line 194, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_joyride.scss */
+  .joyride-tip-guide .joyride-nub.bottom {
+    border-color: #333333 !important;
+    border-bottom-color: transparent !important;
+    border-left-color: transparent !important;
+    border-right-color: transparent !important;
+    bottom: -20px;
+  }
+  /* line 201, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_joyride.scss */
+  .joyride-tip-guide .joyride-nub.right {
+    border-color: #333333 !important;
+    border-top-color: transparent !important;
+    border-right-color: transparent !important;
+    border-bottom-color: transparent !important;
+    top: 22px;
+    left: auto;
+    right: -20px;
+  }
+  /* line 209, /home/kevbac/workspace/ApliPlus-POC/ApliPlus/path/ruby/1.9.1/gems/foundation-rails-5.4.5.0/vendor/assets/stylesheets/foundation/components/_joyride.scss */
+  .joyride-tip-guide .joyride-nub.left {
+    border-color: #333333 !important;
+    border-top-color: transparent !important;
+    border-left-color: transparent !important;
+    border-bottom-color: transparent !important;
+    top: 22px;
+    left: -20px;
+    right: auto;
+  }
+}
