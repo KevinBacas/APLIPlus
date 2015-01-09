@@ -12,17 +12,35 @@ $icon_spacing : 1rem / 2;
 .action_add {
   margin-left : $icon_spacing;
   margin-right : $icon_spacing;
+  padding-left : $icon_spacing;
+  padding-right : $icon_spacing;
   color : green;
+  &:hover {
+    background-color : green;
+    color : white;
+  }
 }
 
 .action_sub {
   margin-left : $icon_spacing;
   margin-right : $icon_spacing;
+  padding-left : $icon_spacing;
+  padding-right : $icon_spacing;
   color : red;
+  &:hover {
+    background-color : red;
+    color : white;
+  }
 }
 
 .action_get_laid {
   margin-left : $icon_spacing;
   margin-right : $icon_spacing;
+  padding-left : $icon_spacing;
+  padding-right : $icon_spacing;
   color : #ffff00;
+  &:hover {
+    background-color : #ffff00;
+    color : white;
+  }
 }
