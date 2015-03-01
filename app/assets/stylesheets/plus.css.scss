@@ -44,3 +44,17 @@ $icon_spacing : 1rem / 2;
     color : white;
   }
 }
+
+#admin_panel_link {
+  color : white;
+  &:hover {
+    color : red;
+  }
+}
+
+#devise_links a {
+  color : white;
+  &:hover {
+    color : #d3d3d3;
+  }
+}

@@ -37,8 +37,6 @@ gem 'requirejs-rails'
 
 
 # Utilities
-# API bundle for rails
-gem 'rails-api', '>= 0.2.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '>= 2.0'
 # Use ActiveModel has_secure_password
@@ -55,14 +53,33 @@ gem 'rdoc-data'
 
 # Servers
 # Spring speeds up development by keeping your application running in the background.
-gem 'spring', group: :development
-# Use unicorn as the app server
-gem 'unicorn'
+group :development, :test do
+  # Call 'debugger' anywhere in the code to stop execution and get a debugger console
+  gem 'debugger'
 
+  # Access an IRB console on exception pages or by using <%= console %> in views
+  gem 'web-console', '~> 2.0'
+
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
+end
+
+group :production do
+  # Use unicorn as the app server
+  gem 'unicorn'
+end
+
+# Authentication
+gem 'omniauth'
+gem 'devise'
+
+# Data management
+gem 'default_value_for'
+
+# Caching
+# gem 'rack-cache'
 
 
 # ================ Useless gems ATM ================
-# Use debugger
-# gem 'byebug', group: [:development, :test]
 # ZeroMQ for Ruby
 # gem 'ffi-rzmq'

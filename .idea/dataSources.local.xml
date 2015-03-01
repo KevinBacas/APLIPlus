@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails ApliPlus: development" uuid="478430c8-288b-4751-bbcd-496678919d7e" />
+    <data-source name="Rails ApliPlus: test" uuid="3d8f348d-54a2-4da6-8a25-14769d2194c2" />
+    <data-source name="Rails ApliPlus: production" uuid="1b7a69c8-7100-4b5f-8cfc-f7a95813ed2d" />
+  </component>
+</project>

@@ -1,0 +1,38 @@
+!!!
+%html
+  %head
+    %title
+      APLIPlus, the brand new teambuilding concept #Complete #NoLimits !
+    = stylesheet_link_tag 'plus', media: 'all'
+    = csrf_meta_tags
+  %body
+    %div.row
+      %nav.top-bar{ "role" => "navigation", "data-topbar" => "true" }
+        %ul.title-area
+          %li.name
+            %h1
+              %a{ :href => "/" }
+                APLIPlus
+        %section.top-bar-section
+          %ul.right
+            - if user_signed_in?
+              %li.active
+                = link_to('Logout', destroy_user_session_path, :method => :delete)
+            - else
+              %li.active
+                = link_to('Login', new_user_session_path)
+    %div.row
+      - if notice
+        %p.notice.alert-box.success.radius
+          = notice
+      - if alert
+        %p.alert.alert-box.alert.radius
+          = alert
+    %div.row
+      = yield
+    %footer.row
+    /
+      - if Rails.env.development?
+        %div.panel.row
+          = debug(params)
+    = javascript_include_tag 'plus'

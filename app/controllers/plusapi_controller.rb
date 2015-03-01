@@ -2,19 +2,28 @@
 
 require 'net/http'
 
-class PlusapiController < ActionController::API
+class PlusapiController < ApplicationController
+
+  before_action :adminFilter, only: [:addPlus, :subPlus, :getLaid]
 
   def listAll
-    list = Plus.all.to_json
+    list = User.all.to_json
     render json: list
   end
 
-  def addPlus
-    plus = Plus.find(params[:id])
-    res = plus.addPlus
-    plus.save
+  def adminFilter
+    @user = User.find(current_user)
+    @is_admin = @user.is_admin?
+    if @is_admin == false
+      raise ActionController::RoutingError.new('Not Found')
+    end
+  end
 
-    if (res % 10) == 0
+  def addPlus
+    user = User.find(params[:id])
+    res = user.addPlus
+
+    if (res.is_a? Integer) and ((res % 10) == 0) and false
       Thread.new do
         message = plus.first_name + ' a maintenant ' + res.to_s + ' plus ! Brace yourselves.'
         params = {
@@ -33,21 +42,27 @@ class PlusapiController < ActionController::API
       end
     end
 
-    render json: {plus_number: res}
+    render json: {plus_number: user.plus_number}
   end
 
   def subPlus
-    plus = Plus.find(params[:id])
-    res = plus.subPlus
-    plus.save
-    render json: {plus_number: res}
+    user = User.find(params[:id])
+    res = user.subPlus
+
+    #TODO: message
+
+    user.save
+    render json: {plus_number: user.plus_number}
   end
 
   def getLaid
-    plus = Plus.find(params[:id])
-    res = plus.getLaid
-    plus.save
-    render json: {plus_number: res}
+    user = User.find(params[:id])
+    res = user.getLaid
+
+    #TODO: message
+
+    user.save
+    render json: {plus_number: user.plus_number}
   end
 
 end

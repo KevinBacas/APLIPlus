@@ -1,15 +1,5 @@
 class Plus < ActiveRecord::Base
-
-  def addPlus
-    self.plus_number = self.plus_number + 1
+  default_value_for :date do
+    Time.now
   end
-
-  def subPlus
-    self.plus_number = self.plus_number - 1
-  end
-
-  def getLaid
-    self.plus_number = self.plus_number - 10
-  end
-
 end

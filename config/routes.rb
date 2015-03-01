@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
 
+  devise_for :users, :controllers => { registrations: 'registrations' }
+  resources :products, except: [:new, :edit]
   root 'plus#index'
 
   get 'plus/index'
+  get 'plus/edit'
 
   get 'plusapi/listAll'
   get 'plusapi/addPlus/:id', to: 'plusapi#addPlus'

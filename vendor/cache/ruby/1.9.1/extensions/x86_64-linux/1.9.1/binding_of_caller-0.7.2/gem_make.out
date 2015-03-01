@@ -1,0 +1,21 @@
+/usr/bin/ruby1.9.1 -r ./siteconf20150222-4188-czxyjx.rb extconf.rb 
+creating Makefile
+
+make  clean
+
+make
+compiling binding_of_caller.c
+binding_of_caller.c: In function ‘binding_free’:
+binding_of_caller.c:40:17: warning: variable ‘bind’ set but not used [-Wunused-but-set-variable]
+   rb_binding_t *bind;
+                 ^
+binding_of_caller.c: At top level:
+binding_of_caller.c:68:3: warning: missing braces around initializer [-Wmissing-braces]
+   binding_mark,
+   ^
+binding_of_caller.c:68:3: warning: (near initialization for ‘binding_data_type.function’) [-Wmissing-braces]
+linking shared-object binding_of_caller.so
+
+make  install
+/usr/bin/install -c -m 0755 binding_of_caller.so .gem.20150222-4188-1j7ygrq
+installing default binding_of_caller libraries
