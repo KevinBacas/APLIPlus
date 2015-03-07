@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get 'plus/index'
   get 'plus/edit'
 
-  get 'plusapi/listAll'
+  get 'plusapi/listAllUser'
   get 'plusapi/addPlus/:id', to: 'plusapi#addPlus'
   get 'plusapi/subPlus/:id', to: 'plusapi#subPlus'
   get 'plusapi/getLaid/:id', to: 'plusapi#getLaid'

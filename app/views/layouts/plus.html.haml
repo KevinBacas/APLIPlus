@@ -5,6 +5,7 @@
       APLIPlus, the brand new teambuilding concept #Complete #NoLimits !
     = stylesheet_link_tag 'plus', media: 'all'
     = csrf_meta_tags
+    = javascript_include_tag "vendor/modernizr"
   %body
     %div.row
       %nav.top-bar{ "role" => "navigation", "data-topbar" => "true" }
@@ -23,15 +24,21 @@
                 = link_to('Login', new_user_session_path)
     %div.row
       - if notice
-        %p.notice.alert-box.success.radius
+        %div.alert-box.success.radius{ "data-alert" => true}
           = notice
+          %a.close{ :href => "#" }
+            &times;
       - if alert
-        %p.alert.alert-box.alert.radius
+        %div.alert.alert-box.alert.radius{ "data-alert" => true}
           = alert
-    = yield
+          %a.close{ :href => "#" }
+            &times;
+      = yield
     %footer.row
-    /
       - if Rails.env.development?
+        %br
+        %br
+        %br
         %div.panel.row
           = debug(params)
     = javascript_include_tag 'plus'

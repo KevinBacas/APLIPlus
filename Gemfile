@@ -34,7 +34,8 @@ gem 'coffee-rails'
 gem 'uglifier', '>= 1.3.0'
 # Use RequireJS to manage package for Javascript
 gem 'requirejs-rails'
-
+# Highcharts-ng
+#gem 'highcharts-ng-rails'
 
 # Utilities
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

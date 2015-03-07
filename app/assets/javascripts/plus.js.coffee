@@ -2,10 +2,11 @@
 #= require jquery_ujs
 #= require foundation
 #= require angular
+#= require line-chart.min
 
 module = angular.module("APLIPlusApp", []);
 module.controller("APLIPlusController", ($scope, $http) =>
-  $http.get('/plusapi/listAll').success( (data) =>
+  $http.get('/plusapi/listAllUser').success( (data) =>
     $scope.peoples = data
   )
 

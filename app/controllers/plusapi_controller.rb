@@ -6,8 +6,13 @@ class PlusapiController < ApplicationController
 
   before_action :adminFilter, only: [:addPlus, :subPlus, :getLaid]
 
-  def listAll
-    list = User.all.to_json
+  def listAllUser
+    list = User.all.to_json(:only => [ :id, :first_name, :last_name, :plus_number ])
+    render json: list
+  end
+
+  def listAllPlus
+    list = Plus.all.to_json
     render json: list
   end
 

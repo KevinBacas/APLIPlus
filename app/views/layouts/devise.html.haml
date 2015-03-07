@@ -25,14 +25,20 @@
       - if notice
         %p.notice.alert-box.success.radius
           = notice
+          %a.close{ :href => "#" }
+            &times;
       - if alert
         %p.alert.alert-box.alert.radius
           = alert
-    %div.row
-      = yield
+          %a.close{ :href => "#" }
+            &times;
+      %div.large-6.large-offset-3.columns
+        = yield
     %footer.row
-    /
       - if Rails.env.development?
+        %br
+        %br
+        %br
         %div.panel.row
           = debug(params)
     = javascript_include_tag 'plus'
