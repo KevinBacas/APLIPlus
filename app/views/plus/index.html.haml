@@ -19,6 +19,14 @@
             {{ people.first_name }}
           %div.large-3.columns
             {{ people.plus_number }}
+/
+  %div.row{ "ng-app" => "APLIChart" }
+    %div.large-12.columns
+      %h1
+        APLIChart :
+      %hr
+        %div.large-12.columns{ "ng-controller" => "APLIChartController" }
+          %linechart{ "data" => "data", "options" => "options", "mode" => "", "width" => "100%", "height" => "100%" }
 - if @is_admin == true
   %div.large-12.columns
     %div.text-center

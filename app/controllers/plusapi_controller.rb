@@ -28,23 +28,9 @@ class PlusapiController < ApplicationController
     user = User.find(params[:id])
     res = user.addPlus
 
-    if (res.is_a? Integer) and ((res % 10) == 0) and false
-      Thread.new do
-        message = plus.first_name + ' a maintenant ' + res.to_s + ' plus ! Brace yourselves.'
-        params = {
-            'token' => 'xoxp-3217377900-3217377902-3223374508-251648',
-            'channel' => '#apliplus',
-            'text' => message,
-            'username' => 'APLIBot',
-        }
-        url = 'https://slack.com/api/chat.postMessage?' + URI.encode_www_form(params)
-        url = URI.parse(url)
-
-        req = Net::HTTP::Get.new(url.to_s)
-        http = Net::HTTP.new(url.host, url.port)
-        http.use_ssl = (url.scheme == "https")
-        response = http.request(req)
-      end
+    if (res.is_a? Integer) and ((res % 10) == 0)
+      message = plus.first_name + ' a maintenant ' + res.to_s + ' plus ! Brace yourselves.'
+      sendMessageToSlack(message)
     end
 
     render json: {plus_number: user.plus_number}
@@ -64,10 +50,33 @@ class PlusapiController < ApplicationController
     user = User.find(params[:id])
     res = user.getLaid
 
-    #TODO: message
+    message = plus.first_name + ' a consommé 10 plus..'
+    sendMessageToSlack(message)
 
     user.save
     render json: {plus_number: user.plus_number}
+  end
+
+  private
+  def sendMessageToSlack(message)
+    <<-DOC
+      Thread.new do
+        params = {
+            'token' => 'xoxp-3217377900-3217377902-3223374508-251648',
+            'channel' => '#apliplus',
+            'text' => message,
+            'username' => 'APLIBot',
+        }
+        url = 'https://slack.com/api/chat.postMessage?' + URI.encode_www_form(params)
+        url = URI.parse(url)
+
+        req = Net::HTTP::Get.new(url.to_s)
+        http = Net::HTTP.new(url.host, url.port)
+        http.use_ssl = (url.scheme == "https")
+        response = http.request(req)
+        return response
+      end
+    DOC
   end
 
 end
