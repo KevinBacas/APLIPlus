@@ -1,0 +1,7 @@
+web:
+  build: .
+  command: rails s -e development -p 3000
+  volumes:
+    - .:/myapp
+  ports:
+    - "3000:3000"

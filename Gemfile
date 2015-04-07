@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.4'
+gem 'rails', '4.0.2'
 
 # Database
 # Use sqlite3 as the database for Active Record
@@ -18,12 +18,12 @@ gem 'foundation-rails', '>= 5.4.3.0'
 gem 'foundation-icons-sass-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 4.0.3'
-# Use Compass
-gem 'compass-rails', '>= 2.0.0'
-# Display Datatables
-gem 'jquery-datatables-rails', '>= 3.1.1'
+# Font Awesome for sass
+gem 'font-awesome-sass', '~> 4.3.0'
 
 # Javascript
+# QQ
+gem 'therubyracer', platforms: :ruby
 # Use jquery as the JavaScript library
 gem 'jquery-rails', '>= 3.1.2'
 # Use AngulasJS
@@ -34,8 +34,6 @@ gem 'coffee-rails'
 gem 'uglifier', '>= 1.3.0'
 # Use RequireJS to manage package for Javascript
 gem 'requirejs-rails'
-# Highcharts-ng
-#gem 'highcharts-ng-rails'
 
 # Utilities
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -55,14 +53,14 @@ gem 'rdoc-data'
 # Servers
 # Spring speeds up development by keeping your application running in the background.
 group :development, :test do
-  # Call 'debugger' anywhere in the code to stop execution and get a debugger console
-  gem 'debugger'
-
-  # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
-
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+end
+
+# Test only
+group :test do
+  # Rake for Travis CI
+  gem 'rake'
 end
 
 group :production do
@@ -76,11 +74,3 @@ gem 'devise'
 
 # Data management
 gem 'default_value_for'
-
-# Caching
-# gem 'rack-cache'
-
-
-# ================ Useless gems ATM ================
-# ZeroMQ for Ruby
-# gem 'ffi-rzmq'
