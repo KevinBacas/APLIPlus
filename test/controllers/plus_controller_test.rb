@@ -1,8 +1,7 @@
 require 'test_helper'
 
 class PlusControllerTest < ActionController::TestCase
-  test "should get index" do
-    get :index
+  test "should success" do
     assert_response :success
   end
 
