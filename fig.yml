@@ -1,4 +1,4 @@
-web:
+apliplus:
   build: .
   command: rails s -e development -p 3000
   volumes:

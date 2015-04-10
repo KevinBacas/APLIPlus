@@ -1,2 +1,0 @@
-U:RDoc::Attr[iI"	data:ETI"XSD::XSDAnySimpleType#data;FI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::Paragraph;	[I"9@data represents canonical space (ex. Integer: 123).;T:
-@fileI"lib/xsd/datatypes.rb;T:0@omit_headings_from_table_of_contents_below0F@I"XSD::XSDAnySimpleType;FcRDoc::NormalClass0
