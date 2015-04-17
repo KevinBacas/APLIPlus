@@ -1,6 +1,6 @@
 apliplus:
   build: .
-  command: rails s -e development -p 3000
+  command: rails s -p 3000
   volumes:
     - .:/myapp
   ports:

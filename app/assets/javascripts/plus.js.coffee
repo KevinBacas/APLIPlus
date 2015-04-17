@@ -1,8 +1,12 @@
+#= require vendor/modernizr
 #= require jquery
 #= require jquery_ujs
-#= require foundation
+#= require turbolinks
 #= require angular
-#= require line-chart.min
+#= require foundation
+
+# Initialisation of Foundation
+$(document).foundation();
 
 module = angular.module("APLIPlusApp", []);
 module.controller("APLIPlusController", ($scope, $http) =>

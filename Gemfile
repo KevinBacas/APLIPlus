@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
@@ -15,7 +14,6 @@ gem 'haml', '>= 4.0.5'
 # CSS
 # Foundation framework for css
 gem 'foundation-rails', '>= 5.4.3.0'
-gem 'foundation-icons-sass-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 4.0.3'
 # Font Awesome for sass
